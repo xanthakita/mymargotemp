@@ -11,18 +11,32 @@ $accessToken = '138484903495684|fe7fd7f292ff36c9eefab89ee0cca56f';
 $fb->setDefaultAccessToken($accessToken);
 
 // Send the request to Graph
-try {
-  $response = $fb->get('/230941890252535/page/feed/, full_picture, created_time');
-} catch(Facebook\Exceptions\FacebookResponseException $e) {
-  // When Graph returns an error
-  echo 'Graph returned an error: ' . $e->getMessage();
-  exit;
-} catch(Facebook\Exceptions\FacebookSDKException $e) {
-  // When validation fails or other local issues
-  echo 'Facebook SDK returned an error: ' . $e->getMessage();
-  exit;
-}
-var_dump($response);
+// try {
+//   $response = $fb->get('/230941890252535/page/feed/, full_picture, created_time');
+// } catch(Facebook\Exceptions\FacebookResponseException $e) {
+//   // When Graph returns an error
+//   echo 'Graph returned an error: ' . $e->getMessage();
+//   exit;
+// } catch(Facebook\Exceptions\FacebookSDKException $e) {
+//   // When validation fails or other local issues
+//   echo 'Facebook SDK returned an error: ' . $e->getMessage();
+//   exit;
+// }
+
+$id='230941890252535';
+
+//Tie it all together to construct the URL
+$url = "https://graph.facebook.com/$id/posts?access_token=$accessToken";
+ 
+//Make the API call
+$result = file_get_contents($url);
+ 
+//Decode the JSON result.
+$decoded = json_decode($result, true);
+ 
+//Dump it out onto the page so that we can take a look at the structure of the data.
+var_dump($decoded);
+
 exit;
 
 foreach($response->getDecodedBody()['data'] as $item) {
