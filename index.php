@@ -41,10 +41,10 @@ var_dump($decoded['data']);
 echo "</pre>";
 
 //The ID of the post.
-$postId = '1926216634058377'; 
+$postId = explode("_", $decoded['data'][0]['id']); 
  
 //Tie it all together to construct the URL
-$url = "https://graph.facebook.com/$id/$postId/";
+$url = "https://www.facebook.com/loris.lovely.lashes.muncie/posts/$postId[1]";
  
 //Make the API call
 $result = file_get_contents($url);
