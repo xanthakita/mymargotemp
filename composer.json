@@ -1,5 +1,7 @@
 {
   "require" : {
-    "facebook/graph-sdk": "~5.0@dev"
+    "facebook/graph-sdk": "~5.0@dev",
+    "paragonie/random_compat",
+    "guzzlehttp/guzzle"
   }
 }
