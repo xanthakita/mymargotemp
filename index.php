@@ -35,9 +35,9 @@ $result = file_get_contents($url);
 $decoded = json_decode($result, true);
  
 //Dump it out onto the page so that we can take a look at the structure of the data.
-echo "size:".sizeof($decoded[0]).$PHP_EOL;
+echo "size:".sizeof($decoded['data']).$PHP_EOL;
 echo "<pre>";
-var_dump($decoded[0]);
+var_dump($decoded['data']);
 echo "</pre>";
 exit;
 
