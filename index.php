@@ -1,7 +1,6 @@
 
   <html>
     <body>
-      <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -83,6 +82,8 @@ foreach($response->getDecodedBody()['data'] as $item) {
 
 ?>
 <hr>
+
+      <div id="fb-root"></div>
 <div class="fb-video" data-href='<?php echo $url; ?>' data-width="500" data-show-text="true"></div>
 <hr>
 </body>
