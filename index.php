@@ -53,10 +53,10 @@ $result = file_get_contents($url);
 $decoded = json_decode($result, true);
  
 //Dump it out.
-echo $url.$PHPEOL;
-var_dump($decoded);
+//echo $url.$PHPEOL;
+//var_dump($decoded);
 
-exit;
+echo "<iframe src='".$url."' width='150' height='150' seamless></iframe>";
 
 foreach($response->getDecodedBody()['data'] as $item) {
     foreach ($item as $key => $value) {
