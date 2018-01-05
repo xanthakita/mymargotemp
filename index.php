@@ -56,7 +56,7 @@ $decoded = json_decode($result, true);
 //echo $url.$PHPEOL;
 //var_dump($decoded);
 
-echo "<iframe src='".$url."' width='150' height='150' seamless></iframe>";
+echo "<iframe src='".$url."' width='100%' height='100%' seamless></iframe>";
 
 foreach($response->getDecodedBody()['data'] as $item) {
     foreach ($item as $key => $value) {
