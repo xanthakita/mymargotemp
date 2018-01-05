@@ -44,7 +44,7 @@ echo "</pre>";
 $postId = '1926216634058377'; 
  
 //Tie it all together to construct the URL
-$url = "https://graph.facebook.com/$postId/";
+$url = "https://graph.facebook.com/$id/$postId/";
  
 //Make the API call
 $result = file_get_contents($url);
