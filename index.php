@@ -41,7 +41,7 @@ var_dump($decoded['data']);
 echo "</pre>";
 
 //The ID of the post.
-$postId = '7177913734_10153798590588735';
+$postId = '230941890252535_1926216634058377';
  
 //Tie it all together to construct the URL
 $url = "https://graph.facebook.com/$postId/";
