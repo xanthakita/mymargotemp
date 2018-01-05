@@ -35,8 +35,9 @@ $result = file_get_contents($url);
 $decoded = json_decode($result, true);
  
 //Dump it out onto the page so that we can take a look at the structure of the data.
+echo "<pre>";
 var_dump($decoded);
-
+echo "</pre>";
 exit;
 
 foreach($response->getDecodedBody()['data'] as $item) {
