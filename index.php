@@ -26,7 +26,7 @@ $fb->setDefaultAccessToken($accessToken);
 $id='230941890252535';
 
 //Tie it all together to construct the URL
-$url = "https://graph.facebook.com/$id/videos?access_token=$accessToken";
+$url = "https://graph.facebook.com/$id/page?access_token=$accessToken";
  
 //Make the API call
 $result = file_get_contents($url);
@@ -39,6 +39,23 @@ echo "size:".sizeof($decoded['data']).$PHP_EOL;
 echo "<pre>";
 var_dump($decoded['data']);
 echo "</pre>";
+
+//The ID of the post.
+$postId = '7177913734_10153798590588735';
+ 
+//Tie it all together to construct the URL
+$url = "https://graph.facebook.com/$postId/";
+ 
+//Make the API call
+$result = file_get_contents($url);
+ 
+//Decode the JSON.
+$decoded = json_decode($result, true);
+ 
+//Dump it out.
+var_dump($decoded);
+
+
 exit;
 
 foreach($response->getDecodedBody()['data'] as $item) {
