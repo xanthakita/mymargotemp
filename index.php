@@ -12,7 +12,7 @@ $fb->setDefaultAccessToken($accessToken);
 
 // Send the request to Graph
 try {
-  $response = $fb->get('/138484903495684/posts/?ref=page_internal, full_picture, created_time');
+  $response = $fb->get('/138484903495684/me/, full_picture, created_time');
 } catch(Facebook\Exceptions\FacebookResponseException $e) {
   // When Graph returns an error
   echo 'Graph returned an error: ' . $e->getMessage();
