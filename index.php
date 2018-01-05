@@ -53,7 +53,7 @@ $result = file_get_contents($url);
 $decoded = json_decode($result, true);
  
 //Dump it out.
-echo $postId.$PHPEOL;
+echo $url.$PHPEOL;
 var_dump($decoded);
 
 exit;
