@@ -53,6 +53,7 @@ $result = file_get_contents($url);
 $decoded = json_decode($result, true);
  
 //Dump it out.
+echo $postId.$PHP_EOL;
 var_dump($decoded);
 
 exit;
