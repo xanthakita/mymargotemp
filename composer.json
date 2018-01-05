@@ -1,7 +1,14 @@
 {
-  "require" : {
-    "facebook/graph-sdk": "~5.0@dev",
-    "paragonie/random_compat": "~2.0.11",
-    "guzzlehttp/guzzle": "~6.3.0"
-  }
+    "name": "kodeeo/facebook-page-scraper",
+    "description": "Facebook Page Post Scraper",
+    "require": {
+        "facebook/php-sdk-v4": "~5.0"
+    },
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "Muhammad Sumon Molla Selim",
+            "email": "me@sumonselim.com"
+        }
+    ]
 }

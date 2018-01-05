@@ -1,2 +1,2 @@
-# mymargotemp
-# This repository is used for a couple of websites. nothing to see here
+# facebook-page-data-scraper
+A simple PHP script to get/scrap posts data (with image) from any Facebook page.
