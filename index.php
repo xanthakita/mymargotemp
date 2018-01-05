@@ -74,6 +74,7 @@ echo $url2."<br>";
 
       <div id="fb-root"></div>
       <h1>test</h1>
+      <h2><?php echo $url2; ?></h2>
 <div class="fb-video" data-href='<?php echo $url2; ?>' data-width="500" data-show-text="true"></div>
 <hr>
 </body>
