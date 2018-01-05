@@ -26,7 +26,7 @@ $fb->setDefaultAccessToken($accessToken);
 $id='230941890252535';
 
 //Tie it all together to construct the URL
-$url = "https://graph.facebook.com/$id/posts?access_token=$accessToken";
+$url = "https://graph.facebook.com/$id/videos?access_token=$accessToken";
  
 //Make the API call
 $result = file_get_contents($url);
