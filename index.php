@@ -53,7 +53,7 @@ $result = file_get_contents($url);
 $decoded = json_decode($result, true);
  
 //Dump it out.
-//echo $url.$PHPEOL;
+echo $url."<br>";
 //var_dump($decoded);
 
 echo "<iframe src='".$url."' width='100%' height='100%' seamless></iframe>";
