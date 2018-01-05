@@ -35,13 +35,13 @@ $result = file_get_contents($url);
 $decoded = json_decode($result, true);
  
 //Dump it out onto the page so that we can take a look at the structure of the data.
-echo "size:".sizeof($decoded['data']).$PHP_EOL;
+echo "size:".sizeof($decoded['data']).$PHPEOL;
 echo "<pre>";
 var_dump($decoded['data']);
 echo "</pre>";
 
 //The ID of the post.
-$postId = '230941890252535_1926216634058377'; 
+$postId = '1926216634058377'; 
  
 //Tie it all together to construct the URL
 $url = "https://graph.facebook.com/$postId/";
@@ -53,7 +53,7 @@ $result = file_get_contents($url);
 $decoded = json_decode($result, true);
  
 //Dump it out.
-echo $postId.$PHP_EOL;
+echo $postId.$PHPEOL;
 var_dump($decoded);
 
 exit;
