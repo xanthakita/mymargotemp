@@ -47,10 +47,10 @@ $result = file_get_contents($url);
 $decoded = json_decode($result, true);
  
 //Dump it out onto the page so that we can take a look at the structure of the data.
-echo "size:".sizeof($decoded['data']).$PHPEOL;
-echo "<pre>";
-var_dump($decoded['data']);
-echo "</pre>";
+// echo "size:".sizeof($decoded['data']).$PHPEOL;
+// echo "<pre>";
+// var_dump($decoded['data']);
+// echo "</pre>";
 
 //The ID of the post.
 $postId = explode("_", $decoded['data'][0]['id']); 
@@ -82,8 +82,8 @@ foreach($response->getDecodedBody()['data'] as $item) {
 
 
 ?>
-
+<hr>
 <div class="fb-video" data-href="https://www.facebook.com/loris.lovely.lashes.muncie/posts/<?php echo $postId[1]; ?>" data-width="500" data-show-text="true"></div>
-
+<hr>
 </body>
 </html>
