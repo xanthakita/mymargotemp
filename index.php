@@ -22,6 +22,8 @@ try {
   echo 'Facebook SDK returned an error: ' . $e->getMessage();
   exit;
 }
+var_dump($response);
+exit;
 
 foreach($response->getDecodedBody()['data'] as $item) {
     foreach ($item as $key => $value) {
