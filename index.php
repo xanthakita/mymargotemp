@@ -1,3 +1,15 @@
+
+  <html>
+    <body>
+      <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=138484903495684';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
 
@@ -68,18 +80,8 @@ foreach($response->getDecodedBody()['data'] as $item) {
     echo "<br/>--------------<br/>";
  }   
 
-    ?>
-    <html>
-    <body>
-      <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=138484903495684';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
+?>
 
 <div class="fb-video" data-href="https://www.facebook.com/loris.lovely.lashes.muncie/posts/<?php echo $postId[1]; ?>" data-width="500" data-show-text="true"></div>
 
