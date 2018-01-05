@@ -2,7 +2,7 @@
     "name": "kodeeo/facebook-page-scraper",
     "description": "Facebook Page Post Scraper",
     "require": {
-        "facebook/php-sdk-v4": "~5.0"
+        "facebook/graph-sdk": "^5.6"
     },
     "license": "MIT License",
     "authors": [
