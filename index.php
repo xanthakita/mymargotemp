@@ -83,7 +83,7 @@ foreach($response->getDecodedBody()['data'] as $item) {
 
 ?>
 <hr>
-<div class="fb-video" data-href="https://www.facebook.com/loris.lovely.lashes.muncie/posts/<?php echo $postId[1]; ?>" data-width="500" data-show-text="true"></div>
+<div class="fb-video" data-href='<?php echo $url; ?>' data-width="500" data-show-text="true"></div>
 <hr>
 </body>
 </html>
