@@ -2,12 +2,12 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 $fb = new Facebook\Facebook([
-  'app_id' => '182728082068351',
-  'app_secret' => 'b871a8b833ed66b2d60a23dce8a17909',
+  'app_id' => '138484903495684',
+  'app_secret' => 'fe7fd7f292ff36c9eefab89ee0cca56f',
   'default_graph_version' => 'v2.5',
   ]);
 
-$accessToken = '182728082068351|b871a8b833ed66b2d60a23dce8a17909';
+$accessToken = '138484903495684|fe7fd7f292ff36c9eefab89ee0cca56f';
 $fb->setDefaultAccessToken($accessToken);
 
 // Send the request to Graph
