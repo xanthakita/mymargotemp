@@ -4,7 +4,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 $fb = new Facebook\Facebook([
   'app_id' => '138484903495684',
   'app_secret' => 'fe7fd7f292ff36c9eefab89ee0cca56f',
-  'default_graph_version' => 'v2.5',
+  'default_graph_version' => 'v2.11',
   ]);
 
 $accessToken = '138484903495684|fe7fd7f292ff36c9eefab89ee0cca56f';
@@ -12,7 +12,7 @@ $fb->setDefaultAccessToken($accessToken);
 
 // Send the request to Graph
 try {
-  $response = $fb->get('/1442164872708299/posts?fields=message, full_picture, created_time');
+  $response = $fb->get('/138484903495684/posts?fields=message, full_picture, created_time');
 } catch(Facebook\Exceptions\FacebookResponseException $e) {
   // When Graph returns an error
   echo 'Graph returned an error: ' . $e->getMessage();
