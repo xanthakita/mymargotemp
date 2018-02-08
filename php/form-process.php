@@ -52,9 +52,7 @@ $Body .= "\n";
 
 // send email
 $success = mail($EmailTo, $Subject, $Body, "From:".$email);
-$fp=fopen('maillogtest.log',"a");
-fwrite($fp,var_dump($success));
-fclose($fp);
+
 // redirect to success page
 if ($success && $errorMSG == ""){
    echo "success";
