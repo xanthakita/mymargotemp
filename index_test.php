@@ -1,13 +1,4 @@
 
-  <html>
-    <body>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=138484903495684';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
@@ -37,14 +28,29 @@ $fb->setDefaultAccessToken($accessToken);
 $id='230941890252535';
 
 //Tie it all together to construct the URL
-$url = "https://graph.facebook.com/$id/posts?access_token=$accessToken";
+$url = "https://graph.facebook.com/$id/albums/811654502181268/photos?access_token=$accessToken";
  
 //Make the API call
 $result = file_get_contents($url);
+
+$albums = $facebook->api(‘/$id/albums’);
+
+foreach($albums[‘data’] as $album)
+{
+        // get all photos for album
+        $photos = $facebook->api("/{$album[‘id’]}/photos");
+
+        foreach($photos[‘data’] as $photo)
+        {
+                echo "<img src='{$photo[‘source’]}’ />", "<br />";
+        }
+}
  
 //Decode the JSON result.
 $decoded = json_decode($result, true);
- 
+ // var_dump($decoded);
+
+ //$this->ask('Question');;
 //Dump it out onto the page so that we can take a look at the structure of the data.
 // echo "size:".sizeof($decoded['data']).$PHPEOL;
 // echo "<pre>";
@@ -52,10 +58,10 @@ $decoded = json_decode($result, true);
 // echo "</pre>";
 
 //The ID of the post.
-$postId = explode("_", $decoded['data'][0]['id']); 
+// $postId = explode("_", $decoded['data'][0]['id']); 
  
 //Tie it all together to construct the URL
-$url2 = "https://www.facebook.com/loris.lovely.lashes.muncie/posts/$postId[1]";
+// $url2 = "https://www.facebook.com/loris.lovely.lashes.muncie/posts/$postId[1]";
  
 //Make the API call
 // $result = file_get_contents($url2);
@@ -64,7 +70,7 @@ $url2 = "https://www.facebook.com/loris.lovely.lashes.muncie/posts/$postId[1]";
 // $decoded = json_decode($result, true);
  
 //Dump it out.
-echo $url2."<br>";
+// echo $url2."<br>";
 //var_dump($decoded);
 
 //echo "<iframe src='".$url."' width='100%' height='100%' seamless></iframe>";
@@ -84,16 +90,5 @@ try {
 }
 $graphNode = $response->getGraphNode();
 var_dump($graphNode);
-echo "Count: $graphNode->count".PHP_EOL;
 ?>
-<hr>
 
-      <!-- <div id="fb-root"></div> -->
-      <!-- <h1>test</h1> -->
-      <!-- <h2><?php //echo $url2; ?></h2> -->
-<!-- <div class="fb-video" data-href="<?php //echo $url2; ?>"" data-width="500" data-show-text="true"></div> -->
-<hr>
-<!-- <iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Floris.lovely.lashes.muncie%2Fposts%2F1930832403596800&width=500&show_text=true&appId=138484903495684&height=0" width="500" height="0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->
-
-</body>
-</html>
