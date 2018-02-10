@@ -84,15 +84,16 @@ try {
 }
 $graphNode = $response->getGraphNode();
 var_dump($graphNode);
+echo "Count: $graphNode->count".PHP_EOL;
 ?>
 <hr>
 
-      <div id="fb-root"></div>
-      <h1>test</h1>
-      <h2><?php echo $url2; ?></h2>
-<div class="fb-video" data-href="<?php echo $url2; ?>"" data-width="500" data-show-text="true"></div>
+      <!-- <div id="fb-root"></div> -->
+      <!-- <h1>test</h1> -->
+      <!-- <h2><?php //echo $url2; ?></h2> -->
+<!-- <div class="fb-video" data-href="<?php //echo $url2; ?>"" data-width="500" data-show-text="true"></div> -->
 <hr>
-<iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Floris.lovely.lashes.muncie%2Fposts%2F1930832403596800&width=500&show_text=true&appId=138484903495684&height=0" width="500" height="0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+<!-- <iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Floris.lovely.lashes.muncie%2Fposts%2F1930832403596800&width=500&show_text=true&appId=138484903495684&height=0" width="500" height="0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->
 
 </body>
 </html>
