@@ -69,6 +69,21 @@ echo $url2."<br>";
 
 //echo "<iframe src='".$url."' width='100%' height='100%' seamless></iframe>";
 
+try {
+  // Returns a `Facebook\FacebookResponse` object
+  $response = $fb->get(
+    '/811654502181268',
+    $accessToken
+  );
+} catch(Facebook\Exceptions\FacebookResponseException $e) {
+  echo 'Graph returned an error: ' . $e->getMessage();
+  exit;
+} catch(Facebook\Exceptions\FacebookSDKException $e) {
+  echo 'Facebook SDK returned an error: ' . $e->getMessage();
+  exit;
+}
+$graphNode = $response->getGraphNode();
+var_dump($graphNode);
 ?>
 <hr>
 
