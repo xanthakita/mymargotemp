@@ -5,11 +5,11 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 $fb = new Facebook\Facebook([
   'app_id' => '138484903495684',
-  'app_secret' => 'fe7fd7f292ff36c9eefab89ee0cca56f',
-  'default_graph_version' => 'v2.11',
+  'app_secret' => 'c26c0220164e21d2df595048431b19ce',
+  'default_graph_version' => 'v2.12',
   ]);
 
-$accessToken = '138484903495684|fe7fd7f292ff36c9eefab89ee0cca56f';
+$accessToken = '138484903495684|c26c0220164e21d2df595048431b19ce';
 $fb->setDefaultAccessToken($accessToken);
 
 // Send the request to Graph
@@ -92,7 +92,7 @@ $id='230941890252535';
 // var_dump($graphNode);
 
 $album_id = $_REQUEST['811654502181268'];
-$photos = $fb->get("/$album_id/photos?fields=images&width", 'EAACEdEose0cBAN65Y2Ua21jFpEamiwBoEj2o1XAdmtJRZBhbRnuBbvZAghAmgnESbSrMbN2YuWyXES8wg0NpL3ZAW0ARJZCUQbTDGxZBZBZCmT70R9YQ8ZBHXgYxCtNXwOCanKuQwyRZC1AmVI5cgQTWBZCa1teCs1LNbz07SqqUavJYXx3LDe1sykTBRpBZCyzwj4ZD')->getGraphEdge()->asArray();
+$photos = $fb->get("/$album_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
 
     // var_dump($photos);
     foreach($photos as $photo){
