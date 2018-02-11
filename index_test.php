@@ -28,26 +28,26 @@ $fb->setDefaultAccessToken($accessToken);
 $id='230941890252535';
 
 //Tie it all together to construct the URL
-$url = "https://graph.facebook.com/$id/albums/811654502181268/photos?access_token=$accessToken";
+// $url = "https://graph.facebook.com/$id/albums/811654502181268/photos?access_token=$accessToken";
  
 //Make the API call
-$result = file_get_contents($url);
+// $result = file_get_contents($url);
 
-$albums = $facebook->api(‘/$id/albums’);
+// $albums = $facebook->api(‘/$id/albums’);
 
-foreach($albums[‘data’] as $album)
-{
-        // get all photos for album
-        $photos = $facebook->api("/{$album[‘id’]}/photos");
+// foreach($albums[‘data’] as $album)
+// {
+//         // get all photos for album
+//         $photos = $facebook->api("/{$album[‘id’]}/photos");
 
-        foreach($photos[‘data’] as $photo)
-        {
-                echo "<img src='{$photo[‘source’]}’ />", "<br />";
-        }
-}
+//         foreach($photos[‘data’] as $photo)
+//         {
+//                 echo "<img src='{$photo[‘source’]}’ />", "<br />";
+//         }
+// }
  
 //Decode the JSON result.
-$decoded = json_decode($result, true);
+// $decoded = json_decode($result, true);
  // var_dump($decoded);
 
  //$this->ask('Question');;
@@ -75,20 +75,34 @@ $decoded = json_decode($result, true);
 
 //echo "<iframe src='".$url."' width='100%' height='100%' seamless></iframe>";
 
-try {
-  // Returns a `Facebook\FacebookResponse` object
-  $response = $fb->get(
-    '/811654502181268',
-    $accessToken
-  );
-} catch(Facebook\Exceptions\FacebookResponseException $e) {
-  echo 'Graph returned an error: ' . $e->getMessage();
-  exit;
-} catch(Facebook\Exceptions\FacebookSDKException $e) {
-  echo 'Facebook SDK returned an error: ' . $e->getMessage();
-  exit;
-}
-$graphNode = $response->getGraphNode();
-var_dump($graphNode);
+// try {
+//   // Returns a `Facebook\FacebookResponse` object
+//   $response = $fb->get(
+//     '/811654502181268',
+//     $accessToken
+//   );
+// } catch(Facebook\Exceptions\FacebookResponseException $e) {
+//   echo 'Graph returned an error: ' . $e->getMessage();
+//   exit;
+// } catch(Facebook\Exceptions\FacebookSDKException $e) {
+//   echo 'Facebook SDK returned an error: ' . $e->getMessage();
+//   exit;
+// }
+// $graphNode = $response->getGraphNode();
+// var_dump($graphNode);
+
+$album_id = $_REQUEST['811654502181268'];
+$photos = $fb->get("/$album_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
+
+    //var_dump($photos);
+    foreach($photos as $photo){
+        echo "<br><img src='{$photo['images'][0]['source']}' />";//Get largest by 0 index
+    }
+
+
+
+    $photos = $fb->get("/$album_id/photos?fields=picture", $accessToken)->getGraphEdge()->asArray();
+        var_dump($photos);
+
 ?>
 
