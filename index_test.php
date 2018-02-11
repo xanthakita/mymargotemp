@@ -98,11 +98,12 @@ $id='230941890252535';
 $album_id = '811654502181268';
 $photos = $fb->get("/$album_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
 
-    $test=var_dump($photos);
+
     foreach($photos as $photo){
         echo "<br><img src='{$photo['images'][3]['source']}' />".PHP_EOL;//Get largest by 0 index
     }
-    echo $test.PHP_EOL;
+    $output= print_r($_REQUEST);
+    echo $output.PHP_EOL;
 
 
     // $photos = $fb->get("/$album_id/photos?fields=picture", $accessToken)->getGraphEdge()->asArray();

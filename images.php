@@ -5,7 +5,7 @@ if (isset($_GET['hub_verify_token'])){
 		echo $_GET['hub_challenge'];
 	} else {
 		$fp=fopen('fbtest.log',"w+");
-		$output=var_dump($_POST);
+		$output=var_dump($_REQUEST);
 		fwrite($fp,$output);
 		fclose($fp);
 	}
