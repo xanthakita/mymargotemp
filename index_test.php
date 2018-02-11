@@ -102,7 +102,7 @@ $photos = $fb->get("/$album_id/photos?fields=images&width", $accessToken)->getGr
     foreach($photos as $photo){
         echo "<br><img src='{$photo['images'][3]['source']}' />".PHP_EOL;//Get largest by 0 index
     }
-    $output= print_r($_REQUEST);
+    $output= print_r($_REQUEST, TRUE);
     echo $output.PHP_EOL;
 
 
