@@ -11,6 +11,10 @@ class ComposerStaticInitbacfa71a50bcdba2e4bd3237b145c7ef
     );
 
     public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'SquareConnect\\' => 14,
+        ),
         'F' => 
         array (
             'Facebook\\' => 9,
@@ -18,6 +22,10 @@ class ComposerStaticInitbacfa71a50bcdba2e4bd3237b145c7ef
     );
 
     public static $prefixDirsPsr4 = array (
+        'SquareConnect\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/square/connect/lib',
+        ),
         'Facebook\\' => 
         array (
             0 => __DIR__ . '/..' . '/facebook/graph-sdk/src/Facebook',
