@@ -9,10 +9,10 @@ $fb = new Facebook\Facebook([
   'default_graph_version' => 'v2.12',
   ]);
 
-// $accessToken = '138484903495684|c26c0220164e21d2df595048431b19ce';
-$accessToken = $fb->getDefaultAccessToken();
-var_dump($accessToken);
-end;
+$accessToken = '138484903495684|mreViJjw_fCCbrBjOR9hKNSEb4k';
+// $accessToken = $fb->getDefaultAccessToken();
+// var_dump($accessToken);
+// die;
 $fb->setDefaultAccessToken($accessToken);
 
 // Send the request to Graph
