@@ -1,3 +1,3 @@
 <?php
-	echo "1820589699";
+	var_dump($GLOBALS);
 ?>
