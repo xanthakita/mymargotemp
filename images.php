@@ -6,6 +6,6 @@
 		$fp=fopen('fbtest.log',"a");
 		$output=var_dump($_POST);
 		fwrite($fp,$output);
-		flcose($fp);
+		fclose($fp);
 	}
 ?>
