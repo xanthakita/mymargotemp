@@ -92,17 +92,17 @@ $id='230941890252535';
 // var_dump($graphNode);
 
 $album_id = $_REQUEST['811654502181268'];
-$photos = $fb->get("/$album_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
+$photos = $fb->get("/$album_id/photos?fields=images&width", 'EAACEdEose0cBAN65Y2Ua21jFpEamiwBoEj2o1XAdmtJRZBhbRnuBbvZAghAmgnESbSrMbN2YuWyXES8wg0NpL3ZAW0ARJZCUQbTDGxZBZBZCmT70R9YQ8ZBHXgYxCtNXwOCanKuQwyRZC1AmVI5cgQTWBZCa1teCs1LNbz07SqqUavJYXx3LDe1sykTBRpBZCyzwj4ZD')->getGraphEdge()->asArray();
 
-    //var_dump($photos);
+    // var_dump($photos);
     foreach($photos as $photo){
         echo "<br><img src='{$photo['images'][0]['source']}' />";//Get largest by 0 index
     }
 
 
 
-    $photos = $fb->get("/$album_id/photos?fields=picture", $accessToken)->getGraphEdge()->asArray();
-        var_dump($photos);
+    // $photos = $fb->get("/$album_id/photos?fields=picture", $accessToken)->getGraphEdge()->asArray();
+        // var_dump($photos);
 
 ?>
 
