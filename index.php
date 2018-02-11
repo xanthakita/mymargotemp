@@ -1,3 +1,25 @@
+<?php
+require_once __DIR__ . '/vendor/autoload.php';
+
+$fb = new Facebook\Facebook([
+  'app_id' => '138484903495684',
+  'app_secret' => 'c26c0220164e21d2df595048431b19ce',
+  'default_graph_version' => 'v2.12',
+  ]);
+
+$accessToken = '138484903495684|mreViJjw_fCCbrBjOR9hKNSEb4k';
+$fb->setDefaultAccessToken($accessToken);
+$id='230941890252535';
+$album_id = '811654502181268';
+$photos = $fb->get("/$album_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
+
+
+    // foreach($photos as $photo){
+    //     echo "<br><img src='{$photo['images'][3]['source']}' width='25%' />".PHP_EOL;//Get largest by 0 index
+    // }
+
+
+?>
 <!doctype html>
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
@@ -319,115 +341,25 @@
             <!-- <a class="zoom lightbox" href="images/recent10.png"><i class="fa fa-search-plus"></i></a> -->
           <!-- </div>  -->
         <!-- </li> -->
-        <li>
-          <img src="images/after-1b.jpeg" alt="" />
-          <div class="portfolio-item-content">
-            <span class="header"></span>
-            <p class="body"></p>
-          </div>
-          <div class="icon-list">
-            <a class="zoom lightbox" href="images/after-1b.jpeg"><i class="fa fa-search-plus"></i></a>
-          </div> 
-        </li>
-        <li>
-          <img src="images/after-1a.jpeg" alt="" />
-          <div class="portfolio-item-content">
-            <span class="header"></span>
-            <p class="body"></p>
-          </div>
-          <div class="icon-list">
-            <a class="zoom lightbox" href="images/after-1a.jpeg"><i class="fa fa-search-plus"></i></a>
-            <a class="zoom lightbox" href="images/before-1.jpeg"><i class="fa fa-arrow-left"></i></a>
-          </div> 
-        </li>
-        <li>
-          <img src="images/after-2.jpeg" alt="" />
-          <div class="portfolio-item-content">
-            <span class="header"></span>
-            <p class="body"></p>
-          </div>
-          <div class="icon-list">
-            <!-- <a class="link" href="single-project.html"><i class="fa fa-link"></i></a> -->
-            <a class="zoom lightbox" href="images/after-2.jpeg"><i class="fa fa-search-plus"></i></a>
-            <a class="zoom lightbox" href="images/before-2.jpeg"><i class="fa fa-arrow-left"></i></a>
-          </div> 
-        </li>
+<?php
 
-        <li>
-          <img src="images/recent5.png" alt="" />
-          <div class="portfolio-item-content">
-            <span class="header"></span>
-            <p class="body"></p>
-          </div>
-          <div class="icon-list">
-            <!-- <a class="link" href="single-project.html"><i class="fa fa-link"></i></a> -->
-            <a class="zoom lightbox" href="images/recent5.png"><i class="fa fa-search-plus"></i></a>
-          </div> 
-        </li> 
+    for ($x=0; $x<9; $x++)
+    {
+      echo "<li>";
+          echo "<img src='{$photos[$x]['images'][3]['source']}' width='33%' />";
+          echo "<div class='portfolio-item-content'>";
+            echo "<span class='header'></span>";
+            echo "<p class='body'></p>";
+          echo "</div>";
+          echo "<div class='icon-list'>";
+          echo "<a class='zoom lightbox' href=".$photos[$x]['images'][0]['source']."><i class='fa fa-search-plus'></i></a>";
+          echo "</div> ";
+        echo "</li>";
+    }
 
-        <li>
-          <img src="images/recent7.png" alt="" />
-          <div class="portfolio-item-content">
-            <span class="header"></span>
-            <p class="body"></p>
-          </div>
-          <div class="icon-list">
-            <!-- <a class="link" href="single-project.html"><i class="fa fa-link"></i></a> -->
-            <a class="zoom lightbox" href="images/recent7.png"><i class="fa fa-search-plus"></i></a>
-          </div> 
-        </li>
-        <li>
-          <img src="images/recent8.png" alt="" />
-          <div class="portfolio-item-content">
-            <span class="header"></span>
-            <p class="body"></p>
-          </div>
-          <div class="icon-list">
-            <!-- <a class="link" href="single-project.html"><i class="fa fa-link"></i></a> -->
-            <a class="zoom lightbox" href="images/recent8.png"><i class="fa fa-search-plus"></i></a>
-          </div> 
-        </li>
-        <li>
-          <img src="images/recent9.png" alt="" />
-          <div class="portfolio-item-content">
-            <span class="header"></span>
-            <p class="body"></p>
-          </div>
-          <div class="icon-list">
-            <!-- <a class="link" href="single-project.html"><i class="fa fa-link"></i></a> -->
-            <a class="zoom lightbox" href="images/recent9.png"><i class="fa fa-search-plus"></i></a>
-          </div> 
-        </li>
-        <li>
-          <img src="images/ourspace.jpeg" alt="" />
-          <div class="portfolio-item-content">
-            <span class="header"></span>
-            <p class="body animated8"></p>
-          </div>
-          <div class="icon-list">
-            <a class="zoom lightbox" href="images/ourspace.jpeg"><i class="fa fa-search-plus"></i></a>
-          </div> 
-        </li>
-        <li>
-          <img src="images/recent4.png" alt="" />
-          <div class="portfolio-item-content">
-            <span class="header"></span>
-            <p class="body"></p>
-          </div>
-          <div class="icon-list">
-            <a class="zoom lightbox" href="images/recent4.png"><i class="fa fa-search-plus"></i></a>
-          </div> 
-        </li>
-        <li>
-          <img src="images/wall-art.jpeg" alt="" />
-          <div class="portfolio-item-content">
-            <span class="header"></span>
-            <p class="body"></p>
-          </div>
-          <div class="icon-list">
-            <a class="zoom lightbox" href="images/wall-art.jpeg"><i class="fa fa-search-plus"></i></a>
-          </div> 
-        </li>
+?>
+<!-- temporarily cut out images paste back here if needed -->
+
       </ul>
 
       <!-- End Recent Projects Carousel -->
