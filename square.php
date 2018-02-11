@@ -1,7 +1,10 @@
 <?php
 
-	var_dump($_POST);
+	$output = print_r($_POST, TRUE);
 
-	echo "test";
+	$fp = fopen('./test.log', "a+");
+	fwrite($fp);
+	fclose($fp);
+
 
 ?>
