@@ -157,7 +157,7 @@ $photos = $fb->get("/$album_id/photos?fields=images&width", $accessToken)->getGr
               <i class="fa fa-bars"></i>
             </button>
             <!-- End Toggle Nav Link For Mobiles -->
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
               <img alt="" src="images/lll_logo_2.png" >
             </a>
           </div>
@@ -248,7 +248,7 @@ $photos = $fb->get("/$album_id/photos?fields=images&width", $accessToken)->getGr
           </div>
           <div class="col-md-6">
             <ul class="breadcrumbs">
-              <li><a href="index.html">Home</a></li>
+              <li><a href="index.php">Home</a></li>
             </ul>
           </div>
         </div>
