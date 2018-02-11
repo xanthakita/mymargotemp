@@ -94,7 +94,8 @@ $id='230941890252535';
 // $graphNode = $response->getGraphNode();
 // var_dump($graphNode);
 
-$album_id = $_REQUEST['811654502181268'];
+// $album_id = $_REQUEST['811654502181268'];
+$album_id = '811654502181268';
 $photos = $fb->get("/$album_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
 
     // var_dump($photos);
