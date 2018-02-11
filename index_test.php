@@ -10,7 +10,7 @@ $fb = new Facebook\Facebook([
   ]);
 
 // $accessToken = '138484903495684|c26c0220164e21d2df595048431b19ce';
-$accessToken = $fb->getAccessToken();
+$accessToken = $fb->getDefaultAccessToken();
 $fb->setDefaultAccessToken($accessToken);
 
 // Send the request to Graph
