@@ -17,7 +17,29 @@ $photos = $fb->get("/$album_id/photos?fields=images&width", $accessToken)->getGr
     // foreach($photos as $photo){
     //     echo "<br><img src='{$photo['images'][3]['source']}' width='25%' />".PHP_EOL;//Get largest by 0 index
     // }
+try {
+  // Returns a `Facebook\FacebookResponse` object
+  $response = $fb->get(
+    '/loris.lovely.lashes.muncie/videos',
+    $accessToken
+  )->getGraphEdge()->asArray();
+} catch(Facebook\Exceptions\FacebookResponseException $e) {
+  echo 'Graph returned an error: ' . $e->getMessage();
+  exit;
+} catch(Facebook\Exceptions\FacebookSDKException $e) {
+  echo 'Facebook SDK returned an error: ' . $e->getMessage();
+  exit;
+}
+// $graphNode = $response->getGraphNode();
+/* handle the result */
+//https://www.facebook.com/loris.lovely.lashes.muncie/videos/1973377869342253/
 
+// foreach($response as $video)
+// {
+  $vid = "https://www.facebook.com/loris.lovely.lashes.muncie/videos/".$response[0]['id']."/";
+  $description=$response[0]['description'];
+
+// }
 
 ?>
 <!doctype html>
@@ -103,6 +125,14 @@ $photos = $fb->get("/$album_id/photos?fields=images&width", $accessToken)->getGr
 </head>
 
 <body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=138484903495684&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
   <!-- Full Body Container -->
   <div id="container">
@@ -368,6 +398,29 @@ $photos = $fb->get("/$album_id/photos?fields=images&width", $accessToken)->getGr
     </div>
     <!-- End Portfolio Section -->
 
+    <!-- Start Videos Section -->
+    <div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;">
+
+      <!-- Start Big Heading -->
+      <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
+        <h1>This is Our Latest <strong>Work</strong></h1>
+      </div>
+      <!-- End Big Heading -->
+
+      <p class="text-center">Recent videos <a href="https://www.facebook.com/pg/loris.lovely.lashes.muncie/videos/">see all videos on FaceBook.</a></p>
+      
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+      <ul id="portfolio-list" data-animated="fadeIn">
+        <li>
+<div class="fb-video" data-href="<?php echo $vid; ?>"  data-show-text="false"><blockquote cite="<?php echo $vid; ?>" class="fb-xfbml-parse-ignore"><a href="<?php echo $vid; ?>"></a><p><?php echo $description; ?></p>Posted by <a href="https://www.facebook.com/loris.lovely.lashes.muncie/">Lori&#039;s Lovely Lashes</a> on Monday, February 12, 2018</blockquote></div>
+        </li>
+      </ul>
+    </div>
+
+    </div>
+    <!-- End Videos Section -->
 
     <!-- Start Testimonials Section -->
     <!-- <div> -->
