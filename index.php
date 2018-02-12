@@ -403,7 +403,7 @@ try {
 
       <!-- Start Big Heading -->
       <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
-        <h1>This is Our Latest <strong>Work</strong></h1>
+        <h1>Our Latest <strong>Informational Video</strong></h1>
       </div>
       <!-- End Big Heading -->
 
