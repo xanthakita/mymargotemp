@@ -1,9 +1,6 @@
+
 <?php
-
 require 'vendor/autoload.php';
-require 'vendor/square/connect/autoload.php';
-
-$access_token='sq0atp-oDQNceQuJqnve7R_qi1tdA';
 
 # setup authorization
 \SquareConnect\Configuration::getDefaultConfiguration()->setAccessToken($access_token);
