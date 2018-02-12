@@ -1,6 +1,7 @@
 
 <?php
 require 'vendor/autoload.php';
+require('connect-php-sdk/autoload.php');
 
 # setup authorization
 \SquareConnect\Configuration::getDefaultConfiguration()->setAccessToken($access_token);
