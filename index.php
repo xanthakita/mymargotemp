@@ -412,7 +412,7 @@ try {
       <div class="col-md-4">
       </div>
       <div class="col-md-4">
-      <ul id="portfolio-list" data-animated="fadeIn">
+      <ul data-animated="fadeIn">
         <li>
 <div class="fb-video" data-href="<?php echo $vid; ?>"  data-show-text="false"><blockquote cite="<?php echo $vid; ?>" class="fb-xfbml-parse-ignore"><a href="<?php echo $vid; ?>"></a><p><?php echo $description; ?></p>Posted by <a href="https://www.facebook.com/loris.lovely.lashes.muncie/">Lori&#039;s Lovely Lashes</a> on Monday, February 12, 2018</blockquote></div>
         </li>
