@@ -4,7 +4,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 $fb = new Facebook\Facebook([
   'app_id' => '138484903495684',
   'app_secret' => 'c26c0220164e21d2df595048431b19ce',
-  'default_graph_version' => 'v2.12',
+  'default_graph_version' => 'v2.11',
   ]);
 
 $accessToken = '138484903495684|mreViJjw_fCCbrBjOR9hKNSEb4k';
