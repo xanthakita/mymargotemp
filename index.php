@@ -7,7 +7,8 @@ $fb = new Facebook\Facebook([
   'default_graph_version' => 'v2.11',
   ]);
 
-$accessToken = '138484903495684|mreViJjw_fCCbrBjOR9hKNSEb4k';
+// $accessToken = '138484903495684|mreViJjw_fCCbrBjOR9hKNSEb4k';
+$accessToken = 'EAAB984d6yAQBAMTI1nNOvNL12XSaz1RZBvCPZB1vC5Jpgsq3iS8yDIzDT0QA97EiqlEFutygabGga3gBE2r7MlpZB0gj4CGayBMoPC4JnTkO4ZC3FZCaiZA3idZCtWpGQyESYV3x4B5deifKI7jtH9Gv3iZBuQnu82GvQnNe3VnxICwNzSsZBBGKpQDZAYt4eJ7aoZD';
 $fb->setDefaultAccessToken($accessToken);
 $id='230941890252535';
 $album_id = '811654502181268';
