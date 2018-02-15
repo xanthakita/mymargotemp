@@ -387,7 +387,7 @@ try {
             echo "<p class='body'></p>";
           echo "</div>";
           echo "<div class='icon-list'>";
-          echo "<a class='zoom lightbox' href=".$photos[$x]['images'][0]['source']."><i class='fa fa-search-plus'></i></a>";
+          echo "<a class='zoom lightbox' href=".$ig_photos[$x]['images'][0]['source']."><i class='fa fa-search-plus'></i></a>";
           echo "</div> ";
         echo "</li>";
     }
@@ -401,7 +401,7 @@ try {
             echo "<p class='body'></p>";
           echo "</div>";
           echo "<div class='icon-list'>";
-          echo "<a class='zoom lightbox' href=".$photos[$x]['images'][0]['source']."><i class='fa fa-search-plus'></i></a>";
+          echo "<a class='zoom lightbox' href=".$mu_photos[$x]['images'][0]['source']."><i class='fa fa-search-plus'></i></a>";
           echo "</div> ";
         echo "</li>";
     }
@@ -415,7 +415,7 @@ try {
             echo "<p class='body'></p>";
           echo "</div>";
           echo "<div class='icon-list'>";
-          echo "<a class='zoom lightbox' href=".$photos[$x]['images'][0]['source']."><i class='fa fa-search-plus'></i></a>";
+          echo "<a class='zoom lightbox' href=".$all_photos[$x]['images'][0]['source']."><i class='fa fa-search-plus'></i></a>";
           echo "</div> ";
         echo "</li>";
     }
