@@ -11,9 +11,12 @@ $accessToken = '138484903495684|mreViJjw_fCCbrBjOR9hKNSEb4k';
 
 $fb->setDefaultAccessToken($accessToken);
 $id='230941890252535';
-//$album_id = '811654502181268';
-$album_id = '290876794259044';
-$photos = $fb->get("/$album_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
+$instagram_id = '1676498949030148';
+$mobile_id = '811654502181268';
+$allphotos_id = '290876794259044';
+$ig_photos = $fb->get("/$instagram_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
+$mu_photos = $fb->get("/$mobile_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
+$all_photos = $fb->get("/$allphotos_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
 
 
     // foreach($photos as $photo){
@@ -374,11 +377,11 @@ try {
           <!-- </div>  -->
         <!-- </li> -->
 <?php
-
-    for ($x=0; $x<9; $x++)
+//instagrapm
+    for ($x=0; $x<3; $x++)
     {
       echo "<li>";
-          echo "<img src='{$photos[$x]['images'][3]['source']}' width='33%' />";
+          echo "<img src='{$ig_photos[$x]['images'][3]['source']}' width='33%' />";
           echo "<div class='portfolio-item-content'>";
             echo "<span class='header'></span>";
             echo "<p class='body'></p>";
@@ -388,7 +391,34 @@ try {
           echo "</div> ";
         echo "</li>";
     }
-
+    //mobile upload
+    for ($x=0; $x<3; $x++)
+    {
+      echo "<li>";
+          echo "<img src='{$mu_photos[$x]['images'][3]['source']}' width='33%' />";
+          echo "<div class='portfolio-item-content'>";
+            echo "<span class='header'></span>";
+            echo "<p class='body'></p>";
+          echo "</div>";
+          echo "<div class='icon-list'>";
+          echo "<a class='zoom lightbox' href=".$photos[$x]['images'][0]['source']."><i class='fa fa-search-plus'></i></a>";
+          echo "</div> ";
+        echo "</li>";
+    }
+    //all_photo
+    for ($x=0; $x<3; $x++)
+    {
+      echo "<li>";
+          echo "<img src='{$all_photos[$x]['images'][3]['source']}' width='33%' />";
+          echo "<div class='portfolio-item-content'>";
+            echo "<span class='header'></span>";
+            echo "<p class='body'></p>";
+          echo "</div>";
+          echo "<div class='icon-list'>";
+          echo "<a class='zoom lightbox' href=".$photos[$x]['images'][0]['source']."><i class='fa fa-search-plus'></i></a>";
+          echo "</div> ";
+        echo "</li>";
+    }
 ?>
 <!-- temporarily cut out images paste back here if needed -->
 
