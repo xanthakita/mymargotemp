@@ -52,6 +52,9 @@ foreach($response as $video)
 
 }
 
+  echo "<pre>";var_dump($vid);echo "</pre>";
+
+  echo "<pre>";var_dump($description);echo "</pre>";
 ?>
 <html>
 <head><<title>test</title>
