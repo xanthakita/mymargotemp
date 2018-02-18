@@ -1,5 +1,7 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
+require_once('loggen.class.php');
+$log = new logGen('xanthakita','output.log');
 
 $fb = new Facebook\Facebook([
   'app_id' => '138484903495684',
@@ -387,6 +389,7 @@ try {
           echo "<img src='{$ig_photos[$x]['images'][3]['source']}' width='33%' />";
           echo "<div class='portfolio-item-content'>";
             echo "<span class='header'></span>";
+            $log->logThis(LOG_DEBUG,$ig_titles[$x]);
             echo "<p class='body'>{$ig_titles[$x]['name']}</p>";
           echo "</div>";
           echo "<div class='icon-list'>";
