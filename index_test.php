@@ -70,7 +70,7 @@ foreach($response as $video)
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <h1>test</h1>
-<div class="fb-video" data-href="<?php echo $vid[0]; ?>" data-width="500" data-show-text="false"><blockquote cite="<?php echo $vid[0]; ?>" class="fb-xfbml-parse-ignore"><a href="<?php echo $vid[0]; ?>"></a><p><?php echo $description[0]; ?></p>Posted by <a href="https://www.facebook.com/loris.lovely.lashes.muncie/">Lori&#039;s Lovely Lashes</a> on Monday, February 12, 2018</blockquote></div>
+<div class="fb-video" data-href="<?php echo $vid[0]; ?>" data-width="500" data-show-text="false"><p><?php echo $description[0]; ?></p><blockquote cite="<?php echo $vid[0]; ?>" class="fb-xfbml-parse-ignore"><a href="<?php echo $vid[0]; ?>"></a>Posted by <a href="https://www.facebook.com/loris.lovely.lashes.muncie/">Lori&#039;s Lovely Lashes</a> on Monday, February 12, 2018</blockquote></div>
 </body>
 </html>
 
