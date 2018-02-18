@@ -383,13 +383,13 @@ try {
         <!-- </li> -->
 <?php
 //instagrapm
+            $log->logThis(LOG_DEBUG,$ig_titles);
     for ($x=0; $x<3; $x++)
     {
       echo "<li>";
           echo "<img src='{$ig_photos[$x]['images'][3]['source']}' width='33%' />";
           echo "<div class='portfolio-item-content'>";
             echo "<span class='header'></span>";
-            $log->logThis(LOG_DEBUG,$ig_titles[$x]);
             echo "<p class='body'>{$ig_titles[$x]['name']}</p>";
           echo "</div>";
           echo "<div class='icon-list'>";
@@ -398,13 +398,13 @@ try {
         echo "</li>";
     }
     //mobile upload
+            $log->logThis(LOG_DEBUG,$mu_titles);
     for ($x=0; $x<3; $x++)
     {
       echo "<li>";
           echo "<img src='{$mu_photos[$x]['images'][3]['source']}' width='33%' />";
           echo "<div class='portfolio-item-content'>";
             echo "<span class='header'></span>";
-            $log->logThis(LOG_DEBUG,$mu_titles[$x]);
             echo "<p class='body'>{$mu_titles[$x]['name']}</p>";
           echo "</div>";
           echo "<div class='icon-list'>";
@@ -413,13 +413,13 @@ try {
         echo "</li>";
     }
     //all_photo
+            $log->logThis(LOG_DEBUG,$all_titles);
     for ($x=0; $x<3; $x++)
     {
       echo "<li>";
           echo "<img src='{$all_photos[$x]['images'][3]['source']}' width='33%' />";
           echo "<div class='portfolio-item-content'>";
             echo "<span class='header'></span>";
-            $log->logThis(LOG_DEBUG,$all_titles[$x]);
             echo "<p class='body'>{$all_titles[$x]['name']}</p>";
           echo "</div>";
           echo "<div class='icon-list'>";
