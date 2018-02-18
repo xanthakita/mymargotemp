@@ -3,7 +3,7 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
 require_once('loggen.class.php');
-$log = new logGen('xanthakita','output.log');
+$log = new logGen('xanthakita','test_output.log');
 
 $fb = new Facebook\Facebook([
   'app_id' => '138484903495684',
@@ -32,7 +32,7 @@ for ($x=0; $x<sizeof($photos); $x++){
 
 
             $log->logThis(LOG_DEBUG,$titles[$x]);
-            $log->logThis(LOG_DEBUG,$photos[$x]);
+            // $log->logThis(LOG_DEBUG,$photos[$x]);
 
 }
 // foreach ($titles as $title)
