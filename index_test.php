@@ -13,7 +13,7 @@ $accessToken = '138484903495684|mreViJjw_fCCbrBjOR9hKNSEb4k';
 $fb->setDefaultAccessToken($accessToken);
 $id='230941890252535';
 $album_id = '811654502181268';
-$photos = $fb->get("/$album_id/photos?fields=images&width&name", $accessToken)->getGraphEdge()->asArray();
+$photos = $fb->get("/$album_id/photos?fields=images&name&width", $accessToken)->getGraphEdge()->asArray();
 
 
     foreach($photos as $photo){
@@ -30,34 +30,34 @@ $photos = $fb->get("/$album_id/photos?fields=images&width&name", $accessToken)->
 
 /* PHP SDK v5.0.0 */
 /* make the API call */
-try {
-  // Returns a `Facebook\FacebookResponse` object
-  $response = $fb->get(
-    '/loris.lovely.lashes.muncie/videos',
-    $accessToken
-  )->getGraphEdge()->asArray();
-} catch(Facebook\Exceptions\FacebookResponseException $e) {
-  echo 'Graph returned an error: ' . $e->getMessage();
-  exit;
-} catch(Facebook\Exceptions\FacebookSDKException $e) {
-  echo 'Facebook SDK returned an error: ' . $e->getMessage();
-  exit;
-}
+// try {
+//   // Returns a `Facebook\FacebookResponse` object
+//   $response = $fb->get(
+//     '/loris.lovely.lashes.muncie/videos',
+//     $accessToken
+//   )->getGraphEdge()->asArray();
+// } catch(Facebook\Exceptions\FacebookResponseException $e) {
+//   echo 'Graph returned an error: ' . $e->getMessage();
+//   exit;
+// } catch(Facebook\Exceptions\FacebookSDKException $e) {
+//   echo 'Facebook SDK returned an error: ' . $e->getMessage();
+//   exit;
+// }
 // $graphNode = $response->getGraphNode();
 /* handle the result */
 //https://www.facebook.com/loris.lovely.lashes.muncie/videos/1973377869342253/
 
-foreach($response as $video)
-{
-  echo "<pre>";var_dump($video);echo "</pre>";
-  $vid[] = "https://www.facebook.com/loris.lovely.lashes.muncie/videos/".$video['id']."/";
-  $description[]=$video['description'];
+// foreach($response as $video)
+// {
+//   echo "<pre>";var_dump($video);echo "</pre>";
+//   $vid[] = "https://www.facebook.com/loris.lovely.lashes.muncie/videos/".$video['id']."/";
+//   $description[]=$video['description'];
 
-}
+// }
 
-  echo "<pre>";var_dump($vid);echo "</pre>";
+//   echo "<pre>";var_dump($vid);echo "</pre>";
 
-  echo "<pre>";var_dump($description);echo "</pre>";
+//   echo "<pre>";var_dump($description);echo "</pre>";
 ?>
 <html>
 <head><<title>test</title>
