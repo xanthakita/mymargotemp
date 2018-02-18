@@ -12,25 +12,26 @@ $fb = new Facebook\Facebook([
 $accessToken = '138484903495684|mreViJjw_fCCbrBjOR9hKNSEb4k';
 $fb->setDefaultAccessToken($accessToken);
 $id='230941890252535';
-$album_id = '811654502181268';
-// $album_id = '1676498949030148';
+// $album_id = '811654502181268';
+$album_id = '1676498949030148';
 // $album_id = '290876794259044';
 
 $photos = $fb->get("/$album_id/photos?fields=images&name&width", $accessToken)->getGraphEdge()->asArray();
-
+echo sizeof($photos).PHP_EOL;
 $titles = $fb->get("/$album_id/photos?fields=name", $accessToken)->getGraphEdge()->asArray();
+echo sizeof($titles).PHP_EOL;
 
-foreach ($titles as $title)
-{
-    foreach($photos as $photo){
-        echo "<br><img src='{$photo['images'][3]['source']}' width='25%' />".PHP_EOL;//Get largest by 0 index
-        echo "<br>name:{$title['name']}<br>".PHP_EOL;
-      // echo "<pre>";
-      // var_dump($photo);
-      // echo "</pre>";
-    }
+// foreach ($titles as $title)
+// {
+//     foreach($photos as $photo){
+//         echo "<br><img src='{$photo['images'][3]['source']}' width='25%' />".PHP_EOL;//Get largest by 0 index
+//         echo "<br>name:{$title['name']}<br>".PHP_EOL;
+//       // echo "<pre>";
+//       // var_dump($photo);
+//       // echo "</pre>";
+//     }
 
-}
+// }
     // for ($x=0; $x<9; $x++)
     // {
     //   echo "<br><img src='{$photos[$x]['images'][3]['source']}' width='25%' />".PHP_EOL;
