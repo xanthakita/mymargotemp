@@ -19,9 +19,9 @@ $allphotos_id = '290876794259044';
 $ig_photos = $fb->get("/$instagram_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
 $ig_titles = $fb->get("/$instagram_id/photos?fields=name", $accessToken)->getGraphEdge()->asArray();
 $mu_photos = $fb->get("/$mobile_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
-$mu_titles = $fb->get("/$mobile_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
+$mu_titles = $fb->get("/$mobile_id/photos?fields=name", $accessToken)->getGraphEdge()->asArray();
 $all_photos = $fb->get("/$allphotos_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
-$all_titles = $fb->get("/$allphotos_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
+$all_titles = $fb->get("/$allphotos_id/photos?fields=name", $accessToken)->getGraphEdge()->asArray();
 
 
     // foreach($photos as $photo){
