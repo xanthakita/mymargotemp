@@ -17,10 +17,11 @@ $photos = $fb->get("/$album_id/photos?fields=images&name&width", $accessToken)->
 
 
     foreach($photos as $photo){
-    //     echo "<br><img src='{$photo['images'][3]['source']}' width='25%' />".PHP_EOL;//Get largest by 0 index
-      echo "<pre>";
-      var_dump($photo);
-      echo "</pre>";
+        echo "<br><img src='{$photo['images'][3]['source']}' width='25%' />".PHP_EOL;//Get largest by 0 index
+        echo "<br>name:{$photo['name']}<br>".PHP_EOL;
+      // echo "<pre>";
+      // var_dump($photo);
+      // echo "</pre>";
     }
 
     // for ($x=0; $x<9; $x++)
