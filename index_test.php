@@ -18,6 +18,9 @@ $album_id = '811654502181268';
 
 // $photos = $fb->get("/$album_id/photos?fields=images&name&width", $accessToken)->getGraphEdge()->asArray();
 
+$me = $fb->api('/me');
+var_dump($me);
+
 $photos = $fb->get("/$album_id/photos", $accessToken)->getGraphEdge()->asArray();
 
     foreach($photos as $photo){
