@@ -13,7 +13,7 @@ $accessToken = '138484903495684|mreViJjw_fCCbrBjOR9hKNSEb4k';
 $fb->setDefaultAccessToken($accessToken);
 $id='230941890252535';
 $album_id = '811654502181268';
-$photos = $fb->get("/$album_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
+$photos = $fb->get("/$album_id/photos?fields=images&width&description", $accessToken)->getGraphEdge()->asArray();
 
 
     foreach($photos as $photo){
