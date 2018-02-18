@@ -46,6 +46,7 @@ try {
 
 foreach($response as $video)
 {
+  echo "<pre>";var_dump($video);echo "</pre>";
   $vid[] = "https://www.facebook.com/loris.lovely.lashes.muncie/videos/".$video['id']."/";
   $description[]=$video['description'];
 
