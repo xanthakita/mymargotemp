@@ -383,6 +383,7 @@ try {
         <!-- </li> -->
 <?php
 //instagrapm
+            $log->logThis(LOG_DEBUG,"------- ig_titles -------");
             $log->logThis(LOG_DEBUG,$ig_titles);
     for ($x=0; $x<3; $x++)
     {
@@ -398,6 +399,7 @@ try {
         echo "</li>";
     }
     //mobile upload
+            $log->logThis(LOG_DEBUG,"------- mu_titles -------");
             $log->logThis(LOG_DEBUG,$mu_titles);
     for ($x=0; $x<3; $x++)
     {
@@ -413,6 +415,7 @@ try {
         echo "</li>";
     }
     //all_photo
+            $log->logThis(LOG_DEBUG,"------- all_titles -------");
             $log->logThis(LOG_DEBUG,$all_titles);
     for ($x=0; $x<3; $x++)
     {
