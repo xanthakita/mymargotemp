@@ -15,8 +15,11 @@ $instagram_id = '1676498949030148';
 $mobile_id = '811654502181268';
 $allphotos_id = '290876794259044';
 $ig_photos = $fb->get("/$instagram_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
+$ig_titles = $fb->get("/$instagram_id/photos?fields=name", $accessToken)->getGraphEdge()->asArray();
 $mu_photos = $fb->get("/$mobile_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
+$mu_titles = $fb->get("/$mobile_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
 $all_photos = $fb->get("/$allphotos_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
+$all_titles = $fb->get("/$allphotos_id/photos?fields=images&width", $accessToken)->getGraphEdge()->asArray();
 
 
     // foreach($photos as $photo){
@@ -384,7 +387,7 @@ try {
           echo "<img src='{$ig_photos[$x]['images'][3]['source']}' width='33%' />";
           echo "<div class='portfolio-item-content'>";
             echo "<span class='header'></span>";
-            echo "<p class='body'></p>";
+            echo "<p class='body'>{$ig_titles[$x]}</p>";
           echo "</div>";
           echo "<div class='icon-list'>";
           echo "<a class='zoom lightbox' href=".$ig_photos[$x]['images'][0]['source']."><i class='fa fa-search-plus'></i></a>";
@@ -398,7 +401,7 @@ try {
           echo "<img src='{$mu_photos[$x]['images'][3]['source']}' width='33%' />";
           echo "<div class='portfolio-item-content'>";
             echo "<span class='header'></span>";
-            echo "<p class='body'></p>";
+            echo "<p class='body'>{$mu_titles[$x]}</p>";
           echo "</div>";
           echo "<div class='icon-list'>";
           echo "<a class='zoom lightbox' href=".$mu_photos[$x]['images'][0]['source']."><i class='fa fa-search-plus'></i></a>";
@@ -412,7 +415,7 @@ try {
           echo "<img src='{$all_photos[$x]['images'][3]['source']}' width='33%' />";
           echo "<div class='portfolio-item-content'>";
             echo "<span class='header'></span>";
-            echo "<p class='body'></p>";
+            echo "<p class='body'>{$all_titles[$x]}</p>";
           echo "</div>";
           echo "<div class='icon-list'>";
           echo "<a class='zoom lightbox' href=".$all_photos[$x]['images'][0]['source']."><i class='fa fa-search-plus'></i></a>";
