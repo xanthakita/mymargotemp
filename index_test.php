@@ -2,6 +2,8 @@
 
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
+require_once('loggen.class.php');
+$log = new logGen('xanthakita','output.log');
 
 $fb = new Facebook\Facebook([
   'app_id' => '138484903495684',
@@ -27,6 +29,11 @@ for ($x=0; $x<sizeof($photos); $x++){
         echo "<pre>";
         var_dump($titles[$x]);
         echo "</pre>";
+
+
+            $log->logThis(LOG_DEBUG,$titles[$x]);
+            $log->logThis(LOG_DEBUG,$photos[$x]);
+
 }
 // foreach ($titles as $title)
 // {
