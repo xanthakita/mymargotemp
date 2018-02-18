@@ -24,6 +24,9 @@ for ($x=0; $x<sizeof($photos); $x++){
 
         echo "<br><img src='{$photos[$x]['images'][3]['source']}' width='25%' />".PHP_EOL;//Get largest by 0 index
         echo "<br>name:{$titles[$x]['name']}<br>".PHP_EOL;
+        echo "<pre>";
+        var_dump($titles[$x]);
+        echo "</pre>";
 }
 // foreach ($titles as $title)
 // {
