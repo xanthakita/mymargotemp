@@ -446,7 +446,7 @@ try {
       <div class="col-md-4">
       <ul data-animated="fadeIn">
         <li>
-<div class="fb-video" data-href="<?php echo $vid; ?>"  data-show-text="false"><p><?php echo $description; ?></p><blockquote cite="<?php echo $vid; ?>" class="fb-xfbml-parse-ignore"><a href="<?php echo $vid; ?>"></a>Posted by <a href="https://www.facebook.com/loris.lovely.lashes.muncie/">Lori&#039;s Lovely Lashes</a> on Monday, February 12, 2018</blockquote></div>
+<div class="fb-video" data-href="<?php echo $vid; ?>"  data-show-text="true"><p><?php echo $description; ?></p><blockquote cite="<?php echo $vid; ?>" class="fb-xfbml-parse-ignore"><a href="<?php echo $vid; ?>"></a>Posted by <a href="https://www.facebook.com/loris.lovely.lashes.muncie/">Lori&#039;s Lovely Lashes</a> on Monday, February 12, 2018</blockquote></div>
         </li>
       </ul>
     </div>
