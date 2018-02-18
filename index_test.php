@@ -18,7 +18,7 @@ $album_id = '811654502181268';
 
 // $photos = $fb->get("/$album_id/photos?fields=images&name&width", $accessToken)->getGraphEdge()->asArray();
 
-$photos = $fb->get("/$album_id/photos", $accessToken)->getGraphEdge()->asArray();
+$photos = $fb->get("/$album_id/photos?fields=name", $accessToken)->getGraphEdge()->asArray();
 
     foreach($photos as $photo){
         echo "<br><img src='{$photo['images'][3]['source']}' width='25%' />".PHP_EOL;//Get largest by 0 index
