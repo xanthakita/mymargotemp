@@ -404,6 +404,7 @@ try {
           echo "<img src='{$mu_photos[$x]['images'][3]['source']}' width='33%' />";
           echo "<div class='portfolio-item-content'>";
             echo "<span class='header'></span>";
+            $log->logThis(LOG_DEBUG,$mu_titles[$x]);
             echo "<p class='body'>{$mu_titles[$x]['name']}</p>";
           echo "</div>";
           echo "<div class='icon-list'>";
@@ -418,6 +419,7 @@ try {
           echo "<img src='{$all_photos[$x]['images'][3]['source']}' width='33%' />";
           echo "<div class='portfolio-item-content'>";
             echo "<span class='header'></span>";
+            $log->logThis(LOG_DEBUG,$all_titles[$x]);
             echo "<p class='body'>{$all_titles[$x]['name']}</p>";
           echo "</div>";
           echo "<div class='icon-list'>";
