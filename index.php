@@ -387,7 +387,7 @@ try {
           echo "<img src='{$ig_photos[$x]['images'][3]['source']}' width='33%' />";
           echo "<div class='portfolio-item-content'>";
             echo "<span class='header'></span>";
-            echo "<p class='body'>{$ig_titles[$x]}</p>";
+            echo "<p class='body'>{$ig_titles[$x]['name']}</p>";
           echo "</div>";
           echo "<div class='icon-list'>";
           echo "<a class='zoom lightbox' href=".$ig_photos[$x]['images'][0]['source']."><i class='fa fa-search-plus'></i></a>";
@@ -401,7 +401,7 @@ try {
           echo "<img src='{$mu_photos[$x]['images'][3]['source']}' width='33%' />";
           echo "<div class='portfolio-item-content'>";
             echo "<span class='header'></span>";
-            echo "<p class='body'>{$mu_titles[$x]}</p>";
+            echo "<p class='body'>{$mu_titles[$x]['name']}</p>";
           echo "</div>";
           echo "<div class='icon-list'>";
           echo "<a class='zoom lightbox' href=".$mu_photos[$x]['images'][0]['source']."><i class='fa fa-search-plus'></i></a>";
@@ -415,7 +415,7 @@ try {
           echo "<img src='{$all_photos[$x]['images'][3]['source']}' width='33%' />";
           echo "<div class='portfolio-item-content'>";
             echo "<span class='header'></span>";
-            echo "<p class='body'>{$all_titles[$x]}</p>";
+            echo "<p class='body'>{$all_titles[$x]['name']}</p>";
           echo "</div>";
           echo "<div class='icon-list'>";
           echo "<a class='zoom lightbox' href=".$all_photos[$x]['images'][0]['source']."><i class='fa fa-search-plus'></i></a>";
