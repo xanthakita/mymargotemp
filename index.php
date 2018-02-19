@@ -396,6 +396,7 @@ try {
           echo "<div class='icon-list'>";
           echo "<a class='zoom lightbox' href=".$ig_photos[$x]['images'][0]['source']."><i class='fa fa-search-plus'></i></a>";
           echo "</div> ";
+          echo "<div class='text-center' data-animation='fadeInDown' data-animation-delay='02'>{$ig_titles[$x]['name']}</div>";
         echo "</li>";
     }
     //mobile upload
@@ -412,6 +413,7 @@ try {
           echo "<div class='icon-list'>";
           echo "<a class='zoom lightbox' href=".$mu_photos[$x]['images'][0]['source']."><i class='fa fa-search-plus'></i></a>";
           echo "</div> ";
+          echo "<div class='text-center' data-animation='fadeInDown' data-animation-delay='02'>{$mu_titles[$x]['name']}</div>";
         echo "</li>";
     }
     //all_photo
@@ -428,6 +430,7 @@ try {
           echo "<div class='icon-list'>";
           echo "<a class='zoom lightbox' href=".$all_photos[$x]['images'][0]['source']."><i class='fa fa-search-plus'></i></a>";
           echo "</div> ";
+          echo "<div class='text-center' data-animation='fadeInDown' data-animation-delay='02'>{$all_titles[$x]['name']}</div>";
         echo "</li>";
     }
 ?>
