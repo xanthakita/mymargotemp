@@ -231,7 +231,7 @@
     <div id="content">
       <div class="container">
         <div class="page-content">
-<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+<!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
     <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
       focusable="false" role="img">
@@ -245,7 +245,7 @@
   <div class="toast-body">
     After booking service you will receive a txt or email (or both) affirming the appointment, if you do NOT the booking did <strong>NOT</strong> go through!
   </div>
-</div>
+</div> . -->
 
           <div class="row">
             <h4 class="classic-title"><span>Schedule Your Appointment!</span></h4>
@@ -691,7 +691,8 @@
 
 Post Free Ad
   <script type="text/javascript" src="js/script.js"></script>
-
+  <script>toastr["error"]("When you successfully book your service you will receive a txt and or email affirming the appointment. If you do not, the booking did NOT complete.", "Notice!")
+	    </script>
 </body>
 
 </html>
