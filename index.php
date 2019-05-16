@@ -400,7 +400,7 @@ try {
         echo "</li>";
     }
     //mobile upload
-            $log->logThis(LOG_DEBUG,"------- mu_titles -------");
+    /*        $log->logThis(LOG_DEBUG,"------- mu_titles -------");
             $log->logThis(LOG_DEBUG,$mu_titles);
     for ($x=0; $x<3; $x++)
     {
@@ -415,7 +415,24 @@ try {
           echo "</div> ";
           echo "<div class='text-center' data-animation='fadeInDown' data-animation-delay='02'>{$mu_titles[$x]['name']}</div>";
         echo "</li>";
-    }
+    } */
+    //instagrapm 2
+            $log->logThis(LOG_DEBUG,"------- ig_titles -------");
+            $log->logThis(LOG_DEBUG,$ig_titles);
+    for ($x=3; $x<6; $x++)
+    {
+      echo "<li>";
+          echo "<img alt='{$ig_titles[$x]['name']}' src='{$ig_photos[$x]['images'][3]['source']}' width='33%' />";
+          echo "<div class='portfolio-item-content'>";
+            echo "<span class='header'></span>";
+            echo "<p class='body'>{$ig_titles[$x]['name']}</p>";
+          echo "</div>";
+          echo "<div class='icon-list'>";
+          echo "<a class='zoom lightbox' href=".$ig_photos[$x]['images'][0]['source']."><i class='fa fa-search-plus'></i></a>";
+          echo "</div> ";
+          echo "<div class='text-center' data-animation='fadeInDown' data-animation-delay='02'>{$ig_titles[$x]['name']}</div>";
+        echo "</li>";
+    }    
     //all_photo
             $log->logThis(LOG_DEBUG,"------- all_titles -------");
             $log->logThis(LOG_DEBUG,$all_titles);
