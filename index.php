@@ -204,7 +204,7 @@ try {
           <div class="navbar-collapse collapse">
             <!-- Stat Search -->
             <div class="search-side">
-              <a class="show-search"><i class="fa fa-search"></i></a>
+             <a class="show-search"><i class="fa fa-search"></i></a>
               <div class="search-form">
                 <form autocomplete="off" role="search" method="get" class="searchform" action="#">
                   <input type="text" value="" name="s" id="s" placeholder="Search the site...">
@@ -338,7 +338,7 @@ try {
       <!-- Start Recent Projects Carousel -->
       <ul id="portfolio-list" data-animated="fadeIn">
         <li>
-          <img src="images/recent1.png" alt="" />
+          <img src="images/header1.png" alt="" />
           <div class="portfolio-item-content">
             <span class="header"></span>
             <p class="body"></p>
@@ -349,7 +349,7 @@ try {
           </div> 
         </li>
         <li>
-          <img src="images/recent2.png" alt="" />
+          <img src="images/header2.png" alt="" />
           <div class="portfolio-item-content">
             <span class="header"></span>
             <p class="body"></p>
@@ -360,7 +360,7 @@ try {
           </div> 
         </li>
         <li>
-          <img src="images/recent6.png" alt="" />
+          <img src="images/header3.png" alt="" />
           <div class="portfolio-item-content">
             <span class="header"></span>
             <p class="body"></p>
@@ -434,7 +434,7 @@ try {
         echo "</li>";
     }    
     //all_photo
-            $log->logThis(LOG_DEBUG,"------- all_titles -------");
+/*            $log->logThis(LOG_DEBUG,"------- all_titles -------");
             $log->logThis(LOG_DEBUG,$all_titles);
     for ($x=0; $x<3; $x++)
     {
@@ -450,6 +450,7 @@ try {
           echo "<div class='text-center' data-animation='fadeInDown' data-animation-delay='02'>{$all_titles[$x]['name']}</div>";
         echo "</li>";
     }
+*/
 ?>
 <!-- temporarily cut out images paste back here if needed -->
 
