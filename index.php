@@ -1,4 +1,6 @@
 <?php
+// adding a comment in order to force git to update.
+
 require_once __DIR__ . '/vendor/autoload.php';
 require_once('loggen.class.php');
 $log = new logGen('xanthakita','output.log',FALSE);
