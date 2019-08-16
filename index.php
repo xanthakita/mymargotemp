@@ -281,7 +281,7 @@ try {
 
 
     <!-- Start Page Banner -->
-    <div class="page-banner" style="padding:75px 0; background: url(images/banner1.png) center #f9f9f9;">
+    <div class="page-banner" style="padding:75px 0; background: url(images/banner3.png) center #f9f9f9;">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
