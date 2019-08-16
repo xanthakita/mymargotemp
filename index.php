@@ -73,7 +73,7 @@ try {
   <meta name="webmaster" content="Jonathan Wagner">
   <meta name="description" content="Margo - Responsive HTML5 Template">
   <meta name="author" content="GrayGrids">
-  <meta name="keywords" content="spray tan, tanning, self tanning, hand held spray tan, Sjolie tanning, tan, bronze tanning, lash boost, Rhodan and Fields, RF representative, skin care">
+  <meta name="keywords" content="lashes, lash extentions, spray tan, tanning, self tanning, hand held spray tan, Sjolie tanning, tan, bronze tanning, lash boost, Rhodan and Fields, RF representative, skin care">
 
   <!-- Bootstrap CSS  -->
   <link rel="stylesheet" href="asset/css/bootstrap.min.css" type="text/css" media="screen">
@@ -279,7 +279,7 @@ try {
 
 
     <!-- Start Page Banner -->
-    <div class="page-banner" style="padding:75px 0; background: url(images/banner7.png) center #f9f9f9;">
+    <div class="page-banner" style="padding:75px 0; background: url(images/banner1.png) center #f9f9f9;">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -309,13 +309,19 @@ try {
               </div>
 
               <!-- Some Text -->
-              <p>As the owner of Lori's Lovely Lashes, I never expected that I would grow to where we are today! I started this as a hobby and now it has become a full blown business! We are a faith based company and I have endeavored to put God first in my daily business activities. </p>
-              <p>The business keeps 3 lash artists busy and we are hoping to grow even more in the next few months. As the lash industry grows and expands to new and improved technology, it will allow us to offer the best and latest products and services. </p>
-              <p>Presently we offer a variety of Lash services, classic, volume and fill-in options as well as pre-built volume fans and bottom lash extentions services. We also offer a Lash Removal service which protects your natural lashes if extentions need removed. Additional services include hand and foot "therapy" treatments, and Sjolie spray tanning. We also offer a full line of lash care products along with a full line of tanning products, from self tanners to tan extenders lotions. </p>
-              <p>The future looks bright as in a few months we plan to open a boutique to add to the experience of being the best woman you can be! </p>
-              <p><strong>Be lashFully You!</strong></p>
-              <br>
-              <p>Lori Lloyd</p>
+		<p>As the owner of Lori's Lovely Lashes, I never expected that I would grow to where we are today! I started this as a hobby and now it has become a full blown business! We are a faith based company and I have endeavored to put God first in my daily business activities. I thank him daily for the success of the business. </p>
+
+		<p>The salon keeps 4 lash artists busy and we have an esthetician to serve you as well.  As the lash and beauty industry grows and expands to new and improved technology, it will allow us to offer the best and latest products and services.</p>
+
+		<p>Presently we offer a variety of Lash services; lash lifts, Classics, Hybrids and Volume full sets, with Fill ins scheduled as you want them.  We also offer a Lash Removal service which protects your natural lashes if extentions need removed. Additional services include Esthetician  services (facials, massage, and full body waxing), esthetician certified in Bioelements products.  Spray tanning, using Sjolie products, their entire spray tan solution product line is made of naturally derived ingredients certified vegan by PETA Foundation. Tans are applied by a certified technician. </p>
+
+		<p>We carry several products in our salon including Grande Lash growth serum product, Save My Lashes pillow, Skinny and Coconut Co. coconut oil, facial and body scrubs, make up choices, and some cute lash motif gifts.  </p>
+
+		<p>We would love to serve you with lashes or other services. Come by and check out our salon, we are a By Appointment Only salon, but we would love to have you visit any time! </p>
+
+		<p>Be Lashfully You!</p>
+		<br>
+		<p>Lori Lloyd</p>
 
             </div>
           </div>
