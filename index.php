@@ -394,7 +394,7 @@ try {
         <!-- </li> -->
 <?php
 //instagrapm
-/* 
+
             $log->logThis(LOG_DEBUG,"------- ig_titles -------");
             $log->logThis(LOG_DEBUG,$ig_titles);
     for ($x=0; $x<3; $x++)
@@ -411,7 +411,7 @@ try {
           echo "<div class='text-center' data-animation='fadeInDown' data-animation-delay='02'>{$ig_titles[$x]['name']}</div>";
         echo "</li>";
     }
-    */
+    
     //mobile upload
     /*        $log->logThis(LOG_DEBUG,"------- mu_titles -------");
             $log->logThis(LOG_DEBUG,$mu_titles);
