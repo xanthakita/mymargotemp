@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 require_once __DIR__ . '/vendor/autoload.php';
 require_once('loggen.class.php');
 $log = new logGen('xanthakita','output.log',FALSE);
-
+/*
 $fb = new Facebook\Facebook([
   'app_id' => '138484903495684',
   'app_secret' => 'c26c0220164e21d2df595048431b19ce',
@@ -46,7 +46,7 @@ try {
   exit;
 }
 // $graphNode = $response->getGraphNode();
-/* handle the result */
+// handle the result //
 //https://www.facebook.com/loris.lovely.lashes.muncie/videos/1973377869342253/
 
 // foreach($response as $video)
@@ -55,7 +55,7 @@ try {
   $description=$response[0]['description'];
 
 // }
-
+*/
 ?>
 <!doctype html>
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
