@@ -393,8 +393,8 @@ try {
           <!-- </div>  -->
         <!-- </li> -->
 <?php
-//instagrapm
-
+//instagram
+/*
             $log->logThis(LOG_DEBUG,"------- ig_titles -------");
             $log->logThis(LOG_DEBUG,$ig_titles);
     for ($x=0; $x<3; $x++)
@@ -411,7 +411,8 @@ try {
           echo "<div class='text-center' data-animation='fadeInDown' data-animation-delay='02'>{$ig_titles[$x]['name']}</div>";
         echo "</li>";
     }
-    
+  */  
+	echo "<h2>We are REALLY Sorry but there is a technical difficulty that our web guy is working on... the client pictures will be back ASAP!</h2>";
     //mobile upload
     /*        $log->logThis(LOG_DEBUG,"------- mu_titles -------");
             $log->logThis(LOG_DEBUG,$mu_titles);
