@@ -395,8 +395,11 @@ try {
 	      
 	<!--  <div class='zoom lightbox embedsocial-instagram' data-ref="73386bc240a3c3e520967a9d0ea2b489cc278af6"></div> 
 	    -->
-<link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
-<ul class="zoom lightbox juicer-feed" data-feed-id="lorislovelylashes"><h1 class="referral"><a href="https://www.juicer.io">Powered by Juicer.io</a></h1></ul>
+<div class="container">
+	<link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+	<ul class="zoom lightbox juicer-feed" data-feed-id="lorislovelylashes"><h1 class="referral"><a href="https://www.juicer.io">Powered by Juicer.io</a></h1></ul>
+</div>		   
+
 <?php
 //instagram
 /*
