@@ -393,7 +393,7 @@ try {
           <!-- </div>  -->
         <!-- </li> -->
 	      
-	      <div class='embedsocial-instagram' data-ref="73386bc240a3c3e520967a9d0ea2b489cc278af6"></div>
+	      <div class='zoom lightbox embedsocial-instagram' data-ref="73386bc240a3c3e520967a9d0ea2b489cc278af6"></div>
 <?php
 //instagram
 /*
@@ -414,7 +414,6 @@ try {
         echo "</li>";
     }
   */  
-	echo "<h2>We are REALLY Sorry but there is a technical difficulty that our web guy is working on... the client pictures will be back ASAP!</h2>";
     //mobile upload
     /*        $log->logThis(LOG_DEBUG,"------- mu_titles -------");
             $log->logThis(LOG_DEBUG,$mu_titles);
