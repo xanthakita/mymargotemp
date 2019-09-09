@@ -347,40 +347,40 @@ try {
       <p class="text-center">Some of our lovely Clients and the lash work we have done for them.</p>
 
       <!-- Start Recent Projects Carousel -->
-      <ul id="portfolio-list" data-animated="fadeIn">
-        <li>
-          <img src="images/header1.png" alt="" />
-          <div class="portfolio-item-content">
-            <span class="header"></span>
-            <p class="body"></p>
-          </div>
-          <div class="icon-list">
-            <!-- <a class="link" href="single-project.html"><i class="fa fa-link"></i></a> -->
-            <a class="zoom lightbox" href="images/recent1.png"><i class="fa fa-search-plus"></i></a>
-          </div> 
-        </li>
-        <li>
-          <img src="images/header2.png" alt="" />
-          <div class="portfolio-item-content">
-            <span class="header"></span>
-            <p class="body"></p>
-          </div>
-          <div class="icon-list">
-            <!-- <a class="link" href="single-project.html"><i class="fa fa-link"></i></a> -->
-            <a class="zoom lightbox" href="images/recent2.png"><i class="fa fa-search-plus"></i></a>
-          </div> 
-        </li>
-        <li>
-          <img src="images/header3.png" alt="" />
-          <div class="portfolio-item-content">
-            <span class="header"></span>
-            <p class="body"></p>
-          </div>
-          <div class="icon-list">
-            <!-- <a class="link" href="single-project.html"><i class="fa fa-link"></i></a> -->
-            <a class="zoom lightbox" href="images/recent6.png"><i class="fa fa-search-plus"></i></a>
-          </div> 
-        </li>
+      <!-- <ul id="portfolio-list" data-animated="fadeIn">
+      <!--   <li>
+      <!--     <img src="images/header1.png" alt="" />
+      <!--     <div class="portfolio-item-content">
+      <!--       <span class="header"></span>
+      <!--       <p class="body"></p>
+      <!--     </div>
+      <!--     <div class="icon-list">
+      <!--       <!-- <a class="link" href="single-project.html"><i class="fa fa-link"></i></a> -->
+      <!--       <a class="zoom lightbox" href="images/recent1.png"><i class="fa fa-search-plus"></i></a>
+      <!--     </div> 
+      <!--   </li>
+      <!--   <li>
+      <!--     <img src="images/header2.png" alt="" />
+      <!--     <div class="portfolio-item-content">
+      <!--       <span class="header"></span>
+      <!--       <p class="body"></p>
+      <!--     </div>
+      <!--     <div class="icon-list">
+      <!--       <!-- <a class="link" href="single-project.html"><i class="fa fa-link"></i></a> -->
+      <!--       <a class="zoom lightbox" href="images/recent2.png"><i class="fa fa-search-plus"></i></a>
+      <!--     </div> 
+      <!--   </li>
+      <!--   <li>
+      <!--     <img src="images/header3.png" alt="" />
+      <!--     <div class="portfolio-item-content">
+      <!--       <span class="header"></span>
+      <!--       <p class="body"></p>
+      <!--     </div>
+      <!--     <div class="icon-list">
+      <!--       <!-- <a class="link" href="single-project.html"><i class="fa fa-link"></i></a> -->
+      <!--       <a class="zoom lightbox" href="images/recent6.png"><i class="fa fa-search-plus"></i></a>
+      <!--     </div> 
+      <!--   </li>
         <!-- <li> -->
           <!-- <img src="images/recent10.png" alt="" /> -->
           <!-- <div class="portfolio-item-content"> -->
@@ -393,7 +393,6 @@ try {
           <!-- </div>  -->
         <!-- </li> -->
 	      <!-- SnapWidget -->
-<script src="https://snapwidget.com/js/snapwidget.js"></script>
 <iframe src="https://snapwidget.com/embed/733471" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
 	      
 	   <!--   <div class='zoom lightbox embedsocial-instagram' data-ref="73386bc240a3c3e520967a9d0ea2b489cc278af6"></div>
@@ -745,7 +744,8 @@ try {
 
   <script type="text/javascript" src="js/script.js"></script>
   <script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script>
-	
+  <script src="https://snapwidget.com/js/snapwidget.js"></script>
+
 </body>
 
 </html>
