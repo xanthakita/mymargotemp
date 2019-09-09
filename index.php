@@ -392,11 +392,9 @@ try {
             <!-- <a class="zoom lightbox" href="images/recent10.png"><i class="fa fa-search-plus"></i></a> -->
           <!-- </div>  -->
         <!-- </li> -->
-	      <!-- SnapWidget -->
-<iframe src="https://snapwidget.com/embed/733471" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
 	      
-	   <!--   <div class='zoom lightbox embedsocial-instagram' data-ref="73386bc240a3c3e520967a9d0ea2b489cc278af6"></div>
--->
+	 <div class='zoom lightbox embedsocial-instagram' data-ref="73386bc240a3c3e520967a9d0ea2b489cc278af6"></div>
+
 <?php
 //instagram
 /*
