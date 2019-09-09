@@ -393,8 +393,10 @@ try {
           <!-- </div>  -->
         <!-- </li> -->
 	      
-	 <div class='zoom lightbox embedsocial-instagram' data-ref="73386bc240a3c3e520967a9d0ea2b489cc278af6"></div>
-
+	<!--  <div class='zoom lightbox embedsocial-instagram' data-ref="73386bc240a3c3e520967a9d0ea2b489cc278af6"></div> 
+	    -->
+<link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+<ul class="zoom lightbox juicer-feed" data-feed-id="lorislovelylashes"><h1 class="referral"><a href="https://www.juicer.io">Powered by Juicer.io</a></h1></ul>
 <?php
 //instagram
 /*
@@ -742,7 +744,8 @@ try {
 
   <script type="text/javascript" src="js/script.js"></script>
   <script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script>
-  <script src="https://snapwidget.com/js/snapwidget.js"></script>
+  <!-- <script src="https://snapwidget.com/js/snapwidget.js"></script> -->
+<script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>	
 
 </body>
 
