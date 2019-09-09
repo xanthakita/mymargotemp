@@ -392,6 +392,8 @@ try {
             <!-- <a class="zoom lightbox" href="images/recent10.png"><i class="fa fa-search-plus"></i></a> -->
           <!-- </div>  -->
         <!-- </li> -->
+	      
+	      <div class='embedsocial-instagram' data-ref="73386bc240a3c3e520967a9d0ea2b489cc278af6"></div>
 <?php
 //instagram
 /*
@@ -739,7 +741,8 @@ try {
 
 
   <script type="text/javascript" src="js/script.js"></script>
-
+  <script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script>
+	
 </body>
 
 </html>
