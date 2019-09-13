@@ -1,10 +1,13 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 // adding a comment in order to force git to update.
 
 require_once __DIR__ . '/vendor/autoload.php';
 require_once('loggen.class.php');
 $log = new logGen('xanthakita','output.log',FALSE);
-
+/*
 $fb = new Facebook\Facebook([
   'app_id' => '138484903495684',
   'app_secret' => 'c26c0220164e21d2df595048431b19ce',
@@ -43,7 +46,7 @@ try {
   exit;
 }
 // $graphNode = $response->getGraphNode();
-/* handle the result */
+// handle the result //
 //https://www.facebook.com/loris.lovely.lashes.muncie/videos/1973377869342253/
 
 // foreach($response as $video)
@@ -52,7 +55,7 @@ try {
   $description=$response[0]['description'];
 
 // }
-
+*/
 ?>
 <!doctype html>
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -344,40 +347,40 @@ try {
       <p class="text-center">Some of our lovely Clients and the lash work we have done for them.</p>
 
       <!-- Start Recent Projects Carousel -->
-      <ul id="portfolio-list" data-animated="fadeIn">
-        <li>
-          <img src="images/header1.png" alt="" />
-          <div class="portfolio-item-content">
-            <span class="header"></span>
-            <p class="body"></p>
-          </div>
-          <div class="icon-list">
-            <!-- <a class="link" href="single-project.html"><i class="fa fa-link"></i></a> -->
-            <a class="zoom lightbox" href="images/recent1.png"><i class="fa fa-search-plus"></i></a>
-          </div> 
-        </li>
-        <li>
-          <img src="images/header2.png" alt="" />
-          <div class="portfolio-item-content">
-            <span class="header"></span>
-            <p class="body"></p>
-          </div>
-          <div class="icon-list">
-            <!-- <a class="link" href="single-project.html"><i class="fa fa-link"></i></a> -->
-            <a class="zoom lightbox" href="images/recent2.png"><i class="fa fa-search-plus"></i></a>
-          </div> 
-        </li>
-        <li>
-          <img src="images/header3.png" alt="" />
-          <div class="portfolio-item-content">
-            <span class="header"></span>
-            <p class="body"></p>
-          </div>
-          <div class="icon-list">
-            <!-- <a class="link" href="single-project.html"><i class="fa fa-link"></i></a> -->
-            <a class="zoom lightbox" href="images/recent6.png"><i class="fa fa-search-plus"></i></a>
-          </div> 
-        </li>
+      <!-- <ul id="portfolio-list" data-animated="fadeIn">
+      <!--   <li>
+      <!--     <img src="images/header1.png" alt="" />
+      <!--     <div class="portfolio-item-content">
+      <!--       <span class="header"></span>
+      <!--       <p class="body"></p>
+      <!--     </div>
+      <!--     <div class="icon-list">
+      <!--       <!-- <a class="link" href="single-project.html"><i class="fa fa-link"></i></a> -->
+      <!--       <a class="zoom lightbox" href="images/recent1.png"><i class="fa fa-search-plus"></i></a>
+      <!--     </div> 
+      <!--   </li>
+      <!--   <li>
+      <!--     <img src="images/header2.png" alt="" />
+      <!--     <div class="portfolio-item-content">
+      <!--       <span class="header"></span>
+      <!--       <p class="body"></p>
+      <!--     </div>
+      <!--     <div class="icon-list">
+      <!--       <!-- <a class="link" href="single-project.html"><i class="fa fa-link"></i></a> -->
+      <!--       <a class="zoom lightbox" href="images/recent2.png"><i class="fa fa-search-plus"></i></a>
+      <!--     </div> 
+      <!--   </li>
+      <!--   <li>
+      <!--     <img src="images/header3.png" alt="" />
+      <!--     <div class="portfolio-item-content">
+      <!--       <span class="header"></span>
+      <!--       <p class="body"></p>
+      <!--     </div>
+      <!--     <div class="icon-list">
+      <!--       <!-- <a class="link" href="single-project.html"><i class="fa fa-link"></i></a> -->
+      <!--       <a class="zoom lightbox" href="images/recent6.png"><i class="fa fa-search-plus"></i></a>
+      <!--     </div> 
+      <!--   </li>
         <!-- <li> -->
           <!-- <img src="images/recent10.png" alt="" /> -->
           <!-- <div class="portfolio-item-content"> -->
@@ -389,8 +392,17 @@ try {
             <!-- <a class="zoom lightbox" href="images/recent10.png"><i class="fa fa-search-plus"></i></a> -->
           <!-- </div>  -->
         <!-- </li> -->
+	      
+	<!--  <div class='zoom lightbox embedsocial-instagram' data-ref="73386bc240a3c3e520967a9d0ea2b489cc278af6"></div> 
+	    -->
+<div class="container">
+	<link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+	<ul class="zoom lightbox juicer-feed" data-feed-id="lorislovelylashes"><h1 class="referral"><a href="https://www.juicer.io">Powered by Juicer.io</a></h1></ul>
+</div>		   
+
 <?php
-//instagrapm
+//instagram
+/*
             $log->logThis(LOG_DEBUG,"------- ig_titles -------");
             $log->logThis(LOG_DEBUG,$ig_titles);
     for ($x=0; $x<3; $x++)
@@ -407,6 +419,7 @@ try {
           echo "<div class='text-center' data-animation='fadeInDown' data-animation-delay='02'>{$ig_titles[$x]['name']}</div>";
         echo "</li>";
     }
+  */  
     //mobile upload
     /*        $log->logThis(LOG_DEBUG,"------- mu_titles -------");
             $log->logThis(LOG_DEBUG,$mu_titles);
@@ -425,6 +438,7 @@ try {
         echo "</li>";
     } */
     //instagrapm 2
+	      /*
             $log->logThis(LOG_DEBUG,"------- ig_titles -------");
             $log->logThis(LOG_DEBUG,$ig_titles);
     for ($x=3; $x<6; $x++)
@@ -441,6 +455,7 @@ try {
           echo "<div class='text-center' data-animation='fadeInDown' data-animation-delay='02'>{$ig_titles[$x]['name']}</div>";
         echo "</li>";
     }    
+    */
     //all_photo
 /*            $log->logThis(LOG_DEBUG,"------- all_titles -------");
             $log->logThis(LOG_DEBUG,$all_titles);
@@ -731,6 +746,9 @@ try {
 
 
   <script type="text/javascript" src="js/script.js"></script>
+  <script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script>
+  <!-- <script src="https://snapwidget.com/js/snapwidget.js"></script> -->
+<script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>	
 
 </body>
 
