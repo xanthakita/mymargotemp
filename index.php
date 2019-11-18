@@ -314,15 +314,22 @@ try {
               </div>
 
               <!-- Some Text -->
-		<p>As the owner of Lori's Lovely Lashes, I never expected that I would grow to where we are today! I started this as a hobby and now it has become a full blown business! We are a faith based company and I have endeavored to put God first in my daily business activities. I thank him daily for the success of the business. </p>
-
-		<p>The salon keeps 4 lash artists busy and we have an esthetician to serve you as well.  As the lash and beauty industry grows and expands to new and improved technology, it will allow us to offer the best and latest products and services.</p>
-
-		<p>Presently we offer a variety of Lash services; lash lifts, Classics, Hybrids and Volume full sets, with Fill ins scheduled as you want them.  We also offer a Lash Removal service which protects your natural lashes if extentions need removed. Additional services include Esthetician  services (facials, massage, and full body waxing), esthetician certified in Bioelements products.  Spray tanning, using Sjolie products, their entire spray tan solution product line is made of naturally derived ingredients certified vegan by PETA Foundation. Tans are applied by a certified technician. </p>
-
-		<p>We carry several products in our salon including Grande Lash growth serum product, Save My Lashes pillow, Skinny and Coconut Co. coconut oil, facial and body scrubs, make up choices, and some cute lash motif gifts.  </p>
-
-		<p>We would love to serve you with lashes or other services. Come by and check out our salon, we are a By Appointment Only salon, but we would love to have you visit any time! </p>
+<P>As the owner of Lori’s Lovely Lashes, I would like to welcome you to the website and tell you that I appreciate you taking an interest in my little business. I started putting on eyelash extensions as a hobby and now it has become a full blown business! This is a faith based company and I have endeavored to put God first in my daily business activities. I thank Him daily for the success of the business. As the lash and beauty industry grows and expands to new and improved technology, it will allow me to offer the best and latest products and services. This is a business that is ever changing and growing!
+	</p>
+<P>Services:<br>
+Presently offered are a variety of Lash Services; Lash Lifts and Tints, Eyebrow waxing, Classic extensions, Hybrid extensions and Volume extensions. Full sets and Fill ins services. We will fill in another artist’s work if they are the same type of service we provide. We offer removals as well. And coming soon we'll be offering Brow Laminations. Look for that service, it is a new service for brows and can be an alternative to Microblading.
+	</p>
+<P>Products: 
+<br>We carry a few products in our salon including Lash X lash wash, Grande Lash growth serum and other Grande products, Save My Lashes pillow, and some cute lash motif gifts.
+	</p>
+<P>Education:
+<br>I offer classes on how to become a Professional Eyelash Extension Artist. Currently in the state of Indiana there are no laws governing this profession, leaving the burden of professionalism up to the consumer. I have developed a very comprehensive 5 day curriculum to cover all aspects of the profession. After working in the field for 9+ years, I have come to understand the importance of learning the skill properly, that, combined with my medical background equals a very in depth educational class. If you are interested in the classes please contact me for more detailed information. 
+	</p><P>Read what a well respected owner of a local salon has to say about the education classes:
+	</p>
+<P>“I have had Lori train three of my service providers in my Premier salon for lash training! Her experience, guidance and curriculums have created an outstanding result with my team and guests!
+Highly highly recommend Lori’s program & expertise when getting your team certified in this beauty industry service! Don’t waste your time or money on a two or three day training class!” JB Shelton-Owner of Detour Salon and Style
+	</p>
+<P>I would love to serve you with lashes or other services. Come by and check out the salon, it is a “By Appointment Only” salon, but I would love to have you visit anytime!
 
 		<p>Be Lashfully You!</p>
 		<br>
